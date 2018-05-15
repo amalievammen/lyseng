@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+/* __________________________ DESKTOP __________________________ */
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+/* VIDEO */
+
+.frontpage_video {
+    height: 100vh;
+    min-height: 100%;
+}
+
+/* NAVIGATIONSMENU */
+
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    letter-spacing: 3px;
+    font-weight: 500;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+nav li {
+    float: left;
+    list-style: none none;
+    padding-left: 17px;
+    padding-right: 17px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .current {
+    color: black;
+}
+
+nav .others {
+    color: gray;
+}
+
+/* FORSIDE TEKST */
+
+#forsidetekst {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+}
