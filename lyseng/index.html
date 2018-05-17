@@ -13,6 +13,13 @@
 
     <!--FONT-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- PAGE SCROLL EFFECT https://codepen.io/SquishyAndroid/pen/ZLOaee -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
 </head>
 
 <body>
@@ -21,25 +28,78 @@
     <header>
         <nav>
             <ul>
-                <li><a class="current" href="index.html">Forside</a></li>
-                <li><a class="others" href="#linkkompetencer">Info</a></li>
-                <li><a class="others" href="#linkcases">Hold</a></li>
-                <li><a class="others" href="#linkcv">Faciliteter</a></li>
+                <li><a class="current" href="#sectionforside">Forside</a></li>
+                <li><a class="others" href="#sectioninfo">Info</a></li>
+                <li><a class="others" href="#sectionhold">Hold</a></li>
+                <li><a class="others" href="#sectionfaciliteter">Faciliteter</a></li>
+                <li><a class="others" href="#sectionregler">Regler</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- VIDEO -->
-    <video class="frontpage_video" autoplay muted loop>
-  <source src="image/videotest.mp4" type="video/mp4">
-  <source src="image/videotest.mp4" type="video/ogg">
-</video>
+    <!-- PAGE SCROLL EFFECT https://codepen.io/SquishyAndroid/pen/ZLOaee -->
+
+    <container id="fullpage">
+        <section id="sectionforside">
+            
+            
+        </section>
+        <section id="sectioninfo">
+        </section>
+        <section id="sectionhold" class="hold">
 
 
-    <div id="forsidetekst">
-        <h1>Lyseng svømmebad</h1>
-    </div>
-    
+
+            <div class="holdtekst">
+                <div> <img src="image/senior_svomning.png" width="50%"></div>
+                <div> <img src="image/baby_svomning.png" width="50%"></div>
+                <div> <img src="image/aqua_aerobic.png" width="50%"></div>
+                <div> <img src="image/aqua_pilates.png" width="50%"></div>
+                <div> <img src="image/aqua_bike.png" width="50%"> </div>
+            </div>
+            
+            <div class="holdtekst">
+                skriv her
+            
+            </div>
+
+
+
+
+
+        </section>
+        <section id="sectionfaciliteter">
+        </section>
+        <section id="sectionregler">
+        </section>
+    </container>
+
+    <!-- PAGE SCROLL EFFECT https://codepen.io/SquishyAndroid/pen/ZLOaee -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
+    <script>
+        $(document).ready(function() {
+
+            //activate fullpage.js
+            $('#fullpage').fullpage({
+                scrollBar: true,
+                navigation: true,
+                navigationTooltips: ['Forside', 'Info', 'Hold', 'Faciliteter', 'Regler'],
+                loopBottom: true,
+                sectionSelector: 'section'
+            });
+
+
+
+            $('section').each(function() {
+                int++
+                $(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
+            });
+        });
+    </script>
 
 </body>
 
