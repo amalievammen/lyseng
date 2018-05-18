@@ -19,6 +19,7 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -36,30 +37,55 @@
             </ul>
         </nav>
     </header>
+    
+   
 
     <!-- PAGE SCROLL EFFECT https://codepen.io/SquishyAndroid/pen/ZLOaee -->
 
     <container id="fullpage">
         <section id="sectionforside">
             
+           <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="image/MVI_0633.MP4" type="video/webm">
+     
+    </video>
+</div>
+            <div data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="400"
+     data-aos-offset="0">
+            <h1 >LYSENG SVØMMEBAD</h1>
+                 </div>
             
         </section>
-        <section id="sectioninfo">
+        <section id="sectioninfo" >
+           <div data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="400"
+     data-aos-offset="0">
+        <img src="image/tekstbox.png">
+            </div>
+            
+              
         </section>
         <section id="sectionhold" class="hold">
 
+            
 
-
-            <div class="holdtekst">
-                <div> <img src="image/senior_svomning.png" width="50%"></div>
-                <div> <img src="image/baby_svomning.png" width="50%"></div>
-                <div> <img src="image/aqua_aerobic.png" width="50%"></div>
-                <div> <img src="image/aqua_pilates.png" width="50%"></div>
-                <div> <img src="image/aqua_bike.png" width="50%"> </div>
+            <div class="holdtekst" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="400"
+     data-aos-offset="500">
+                <div> <img src="image/senior_svomning.png" width="45%"></div>
+                <div> <img src="image/baby_svomning.png" width="45%"></div>
+                <div> <img src="image/aqua_aerobic.png" width="45%"></div>
+                <div> <img src="image/aqua_pilates.png" width="45%"></div>
+                <div> <img src="image/aqua_bike.png" width="45%"> </div>
             </div>
             
             <div class="holdtekst">
-                skriv her
+                
             
             </div>
 
@@ -99,8 +125,14 @@
                 $(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
             });
         });
+    
     </script>
-
+    
+    
+<script src="AOS/aos.js"> </script>
+<script type="text/javascript">
+    AOS.init();</script>
+    
 </body>
 
 </html>
