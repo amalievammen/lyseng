@@ -193,4 +193,35 @@ nav .others {
     margin:auto;
 }
 
+#sectionforside img {
+    width: 30%;
+    position:absolute;
+    top:0;
+    left:20%;
+    right:0;
+    bottom:0;
+    margin:auto;
+    padding: auto;
+}
+
+#h1 {
+    font-family: 'source sans pro', bold; 
+}
+
+#tekst1 {
+    position: absolute;
+    font-size: 80px;
+    left: 30%;
+    padding: -5%;
+    bottom: 40%;
+}
+
+
+#tekst2 {
+    position: absolute;
+    font-size: 80px;
+    left: 25%;
+    padding: 5%;
+    bottom: 20%;
+}
 
