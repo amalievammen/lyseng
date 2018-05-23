@@ -1,8 +1,6 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
-
 
 /* MEYERWEB - RESET CSS */
 
@@ -10,104 +8,180 @@
    v2.0 | 20110126
    License: none (public domain)*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 /* __________________________ DESKTOP __________________________ */
 
-html {overflow:auto;}
+html {
+    overflow: auto;
+}
 
 body {
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
-    
-    
 }
-/* NAVIGATIONSMENU */
 
-header{
+/* HEADER */
+
+header {
     width: 100%;
 }
 
 
+#fullpage{
+    color: aqua;
+}
 
-/* video baggrund */ 
+/* VIDEO SOM BAGGRUND */
 
 .fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-   
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+
 }
 
 .fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
 }
 
 @media (max-width: 767px) {
-  .fullscreen-bg {
-    
-  }
+    .fullscreen-bg {}
 
-  .fullscreen-bg__video {
-    display: none;
-  }
+    .fullscreen-bg__video {
+        display: none;
+    }
 }
 
-
-
-
-
-
-
+/* NAVIGATIONSMENU */
 
 nav {
     width: 100%;
@@ -134,17 +208,17 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: none;
     color: black;
 }
 
-nav a:active{
+nav a:active {
     text-decoration: none;
-    color: black;  
+    color: black;
 }
 
-nav a:visited{
+nav a:visited {
     text-decoration: none;
 }
 
@@ -156,129 +230,109 @@ nav .others {
     color: gray;
 }
 
-/* SEKTIONER */
+/* INFO */
 
-.hold{
+#sectioninfo {
     width: 100%;
-    display: inline-block;
-     background-color: #C8E1E8;
+    background-color: #C8E1E8;
 }
 
-.holdtekst{
+#sectioninfo img {
+    width: 22%;
+    display: inline-block;
+    margin-left: 8%;
+}
+
+#boeje1 {
+    width: 4%;
+    position: absolute;
+    left: 63.5%;
+    top: 33%;
+}
+
+#boeje2 {
+    width: 4%;
+    position: absolute;
+    left: 33.5%;
+    top: 33%;
+}
+
+/* HOLD */
+
+.hold {
+    width: 100%;
+    display: inline-block;
+    background-color: #C8E1E8;
+}
+
+.holdtekst {
     width: 50%;
     text-align: center;
     display: inline-block;
     float: left;
 }
 
-.holdtekst img{
+.holdtekst img {
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 .holdtekst img:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.07); 
-  
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.07);
+
 }
 
-.holdtekst img:focus, .holdtekst img:active {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateX(2em);
+.holdtekst img:focus,
+.holdtekst img:active {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateX(2em);
 }
 
-
-#sectioninfo {
-    width: 100%;
-   background-color: #C8E1E8;
-}
-
-#sectioninfo img {
-   width: 22%;
-   display: inline-block;
-    margin-left: 8%; 
-}
-
-#boeje1 {
-    width: 4%;
-    position:absolute;
-    left: 63.5%;
-    top: 33%;
-   
-        
-}
-
-#boeje2 {
-    width: 4%;
-    position:absolute;
-    left: 33.5%;
-     top: 33%;
-   
-        
-}
-
+/* LOGO */
 
 #logo {
-  width: 40%;
-    position:absolute;
-    top:0;
-    left:0%;
-    right:0;
-    bottom:0;
-    margin:auto;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     padding: auto;
 }
 
 #logo {
-  animation: stroke-reveal 5s ease;
+    animation: stroke-reveal 5s ease;
 }
-
 
 @keyframes stroke-reveal {
-  from {
-    opacity: 0.5;
-      width: 20%;   
-  }
-  to {
-      
-  }
+    from {
+        opacity: 0.5;
+        width: 20%;
+    }
+    to {}
 }
 
-
-
-#h1 {
-    font-family: 'source sans pro', bold; 
-}
-
-#tekst1 {
-    position: absolute;
-    font-size: 80px;
-    left: 30%;
-    padding: -5%;
-    bottom: 40%;
-}
-
-
-#tekst2 {
-    position: absolute;
-    font-size: 80px;
-    left: 25%;
-    padding: 5%;
-    bottom  : 20%;
-}
+/* FACILITETER */
 
 #sectionfaciliteter {
     width: 100%;
-   background-color: #C8E1E8
+    background-color: #C8E1E8
 }
 
-/* entire container, keeps perspective */
+/* https://codepen.io/radibit/pen/CjJfA */
+
+/* HELE CONTAINEREN, ALLE FLIP-BILLEDER */
+
 .flip-container {
-	perspective: 1000;
+    perspective: 1000;
     display: inline-block;
     margin-left: 2%;
-    
+
 }
 
 .flip-container img {
@@ -286,66 +340,77 @@ nav .others {
 }
 
 
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
+/* FLIP NÅR MOUSEOVER */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
-	width: 250px;
-	height: 400px;
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 0.6s;
-  -moz-transform-style: preserve-3d;
-  -o-transition: 0.6s;
-  -o-transform-style: preserve-3d;
-  -ms-transition: 0.6s;
-  -ms-transform-style: preserve-3d;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-}
-.front p, .back p {
-  color: #fff;
-  font-family: HelveticaNeue, Arial, sans-serif; 
-  text-align: center;
-  font-size: 30px;
-}
-/* front pane, placed above back */
-.front {
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: ratateY(0deg);
-  background: rgb(81, 211, 133);
-  z-index: 2;
-}
-
-/* back, initially hidden pane */
+.flip-container,
+.front,
 .back {
-	transform: rotateY(180deg);
-	background: lightblue;
-	-webkit-transform: rotateY(-180deg);
-	-moz-transform: rotateY(-180deg);
-	-o-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
+    width: 250px;
+    height: 400px;
 }
 
+/* FLIP HASTIGHED */
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* GEMMER BAGSIDEN AF FLIP-BILLEDET */
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front p,
+.back p {
+    color: #fff;
+    font-family: HelveticaNeue, Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* FORSIDEN AF FLIP-BILLEDET */
+
+.front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: ratateY(0deg);
+    background: rgb(81, 211, 133);
+    z-index: 2;
+}
+
+/* GEMMER BAGSIDEN AF FLIP-BILLEDET */
+
+.back {
+    transform: rotateY(180deg);
+    background: lightblue;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
