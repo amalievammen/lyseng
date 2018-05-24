@@ -225,16 +225,7 @@ nav .others {
     color: gray;
 }
 
-/* INFO */
-
-#overlayforside {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    height: 70%;
-}
-
-/* SEKTIONER */
+/* HOLD */
 
 .hold {
     width: 100%;
@@ -269,6 +260,14 @@ nav .others {
     transform: translateX(2em);
 }
 
+/* INFO */
+
+#overlayforside {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 70%;
+}
 
 #sectioninfo {
     width: 100%;
@@ -297,36 +296,64 @@ nav .others {
 
 #infotekst1 {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 10%;
-    border: solid 1px black;
-    
     text-align: center;
-     width: 19%;
-    height: 60%;
+    width: 19%;
+    height: 55%;
+}
 
+#infotekst1 h1,
+#infotekst2 h1,
+#infotekst3 h1 {
+    font-family: 'Pacifico', cursive;
+    color: #293290;
+}
+
+#infotekst1 p,
+#infotekst2 p,
+#infotekst3 p {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 1;
+    font-size: 13px;
+}
+
+.overskrift {
+    padding-top: 1%;
+    color: #293290;
+    font-weight: bold;
+}
+
+.overskrift1 {
+    padding-top: 10%;
+    color: #293290;
+    font-weight: bold;
+}
+
+.overskrift2 {
+    padding-top: 10%;
+    color: #293290;
+    font-weight: bold;
 }
 
 #infotekst2 {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 40%;
-    border: solid 1px black;
     text-align: center;
     width: 19%;
-    height: 60%;
-
+    height: 55%;
 }
-
 
 #infotekst3 {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 70%;
-    border: solid 1px black;
     text-align: center;
-     width: 19%;
-    height: 60%;
+    width: 19%;
+    height: 55%;
 
 }
 
@@ -491,8 +518,60 @@ nav .others {
     -ms-transform: rotateY(-180deg);
 }
 
+/* REGLER */
+
 #sectionregler {
-        width: 100%;
-        background-color: #C8E1E8;
-  
-    }
+    width: 100%;
+    background-color: #C8E1E8;
+
+}
+
+#sectionregler img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reglertekst {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    width: 72%;
+    height: 60%;
+}
+
+#reglertekst h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #293290;
+    font-size: 35px;
+}
+
+#reglertekst p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding-left: 15%;
+    padding-top: 2%;
+    line-height: 2;
+}
+
+.adgang {
+    margin-top: 3%;
+}
+
+h3 {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

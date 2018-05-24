@@ -14,6 +14,8 @@
     <!--FONT-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
     <!-- PAGE SCROLL EFFECT https://codepen.io/SquishyAndroid/pen/ZLOaee -->
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
@@ -56,7 +58,7 @@
     </video>
             </div>
 
-           
+
             <img id="overlayforside" src="image/overlay%20forside%203.png">
 
         </section>
@@ -70,7 +72,6 @@
                 <img id="img" src="image/tekstbox.png">
                 <img id="img" src="image/tekstbox.png">
                 <img id="img" src="image/tekstbox.png">
-                   
             </div>
 
             <!-- TO BØJER -->
@@ -80,19 +81,51 @@
             <div id="boeje2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
                 <img src="image/boje.png">
             </div>
-            
-            <div id="infotekst1"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
-                <p>infotekst1</p>
+
+            <!-- TEKST TIL INFO -->
+            <div id="infotekst1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
+
+                <h1>Priser</h1>
+                <p class="overskrift1">Enkeltbillet</p>
+                <p>Voksen 45 kr.</p>
+                <p>Barn (4-14 år) / Pensionist 25 kr.</p>
+                <p class="overskrift">12-turskort</p>
+                <p>Voksen 450 kr.</p>
+                <p>Barn (4-14 år) / Pensionist 250 kr.</p>
+                <p class="overskrift">Månedskort (kræver pasfoto)</p>
+                <p>Voksen 420 kr.</p>
+                <p>Barn (4-14 år) / Pensionist 210 kr.</p>
+                <p class="overskrift">3-månedskort (kræver pasfoto)</p>
+                <p>Voksen 1155 kr.</p>
+                <p>Barn (4-14 år) / Pensionist 575 kr.</p>
+                <p class="overskrift">Kombi-billet</p>
+                <p>2 børn og 2 voksne 125 kr.</p>
             </div>
-            
+
             <div id="infotekst2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
-                 <p>infotekst2</p>
+                <h1>Åbningstider</h1>
+                <p class="overskrift2">Ændringer i åbningstider</p>
+                <p>19., 20. og 21. maj (Pinse): 10.00 - 17.00</p>
+                <p>5. juni (Grundlovsdag): 14.00 - 20.00</p>
+                <p class="overskrift2">Almindelige åbningstider</p>
+                <p>Mandag: 14.00 - 17.00</p>
+                <p>Tirsdag: 14.00 - 20.00</p>
+                <p>Onsdag: LUKKET</p>
+                <p>Torsdag: 14.00 - 17.00</p>
+                <p>Fredag: LUKKET</p>
+                <p>Lørdag: 13.00 - 17.00</p>
+                <p>Søndag: 13.00 - 17.00</p>
             </div>
-            
-           <div id="infotekst3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
-                <p>infotekst3</p>
+
+            <div id="infotekst3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
+                <h1>Kontakt</h1>
+                <p class="overskrift2">Lyseng Svømmebad</p>
+                <p>Lysengvej 4</p>
+                <p>8270 Højbjerg</p>
+                <p>info@vigirbyenpuls.dk</p>
+                <p class="overskrift2">Tlf. 87133385</p>
             </div>
-            
+
         </section>
 
         <!-- HOLD -->
@@ -103,12 +136,16 @@
             <!-- LINK TIL AOS: https://michalsnik.github.io/aos/ -->
 
             <div class="holdtekst">
-                <div data-aos="fade-right" data-aos-delay="300"> <img src="image/senior_svoemning.png" width="45%"></div>
-                <div data-aos="fade-right" data-aos-delay="350"> <img src="image/baby_svoemning.png" width="45%"></div>
-                <div data-aos="fade-right" data-aos-delay="400"> <img src="image/aqua_svoemning.png" width="45%"></div>
-                <div data-aos="fade-right" data-aos-delay="450"> <img src="image/aqua_pilates.png" width="45%"></div>
-                <div data-aos="fade-right" data-aos-delay="500"> <img src="image/aqua_bike.png" width="45%"> </div>
+                <div id="senior" data-aos="fade-right" data-aos-delay="300"> <img src="image/senior_svoemning.png" width="45%"></div>
+                <div id="baby" data-aos="fade-right" data-aos-delay="350"> <img src="image/baby_svoemning.png" width="45%"></div>
+                <div id="aerobic" data-aos="fade-right" data-aos-delay="400"> <img src="image/aqua_svoemning.png" width="45%"></div>
+                <div id="pilates" data-aos="fade-right" data-aos-delay="450"> <img src="image/aqua_pilates.png" width="45%"></div>
+                <div id="bike" data-aos="fade-right" data-aos-delay="500"> <img src="image/aqua_bike.png" width="45%"> </div>
             </div>
+
+            <div id="tekst"> 
+                <img src="image/holdboks1.png" width="50%">
+                Hos Lyseng Svømmebad tilbyder vi hold for hver en smag. Vi har hold, som rammer den bredeste del af målgruppen, hvor vi samtidigt fokuserer på brugen af vores faciliteter. Vælg det hold du finder mest interesse, og lær mere!</div>
 
             <!-- TEKST TIL HOLD -->
             <div class="holdtekst">
@@ -185,6 +222,21 @@
 
         <!-- REGLER -->
         <section id="sectionregler">
+
+            <img src="image/tekstboks2.png" width="85%">
+
+
+            <div id="reglertekst" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
+
+                <h1>Regler og retningslinjer</h1>
+                <p class="adgang">Adgang til svømmebadet sker på eget ansvar. Du er således ansvarlig for <br> din egen adfærd og dine ejendele - også når de er låst inde i skabet</p>
+                <p>Vis hensyn til de andre badegæster og følg altid personalets anvisninger</p>
+                <p>Det er tilladt at fotografere egen familie, når dette er aftalt med vores personale</p>
+                <p>Personer med smitsomme sygdomme eller væskende sår, har ingen adgang til <br> badefaciliteterne og bassiner</p>
+                <p>Vi skal gøre opmærksom på, at anlægget er røgfrit og at øl og spiritus ikke <br> må medbringes</p>
+
+            </div>
+
         </section>
     </container>
 
@@ -220,6 +272,22 @@
     </script>
     <script type="text/javascript">
         AOS.init();
+    </script>
+
+
+    <script>
+        let minTekst = "<h3> Seniorsvømning giver mulighed for at holde gang i krop og sjæl, i samvær med andre ligestillede seniorer. Holdet kan være noget for dig over 60 år eller førtidspensionist. Heraf kan alle deltage, både hvis du er nybegynder, har småskavanker eller har et behov for vandtilvænning. Hver lektion kan indeholde elementer såsom vandgymnastik, aquajogging, motionssvømning samt høj mulighed for et socialt samvær.</h3> ";
+
+        $(document).ready(function() {
+            //console.log( "jQuery up and running" );
+
+            $('#senior').click(
+                function() {
+                    $('#tekst').html(minTekst)
+                }
+            )
+
+        });
     </script>
 
 </body>
