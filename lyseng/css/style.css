@@ -227,6 +227,49 @@ nav .others {
 
 /* INFO */
 
+#overlayforside {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 70%;
+}
+
+/* SEKTIONER */
+
+.hold {
+    width: 100%;
+    display: inline-block;
+    background-color: #C8E1E8;
+}
+
+.holdtekst {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+
+.holdtekst img {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.holdtekst img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.07);
+
+}
+
+.holdtekst img:focus,
+.holdtekst img:active {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateX(2em);
+}
+
+
 #sectioninfo {
     width: 100%;
     background-color: #C8E1E8;
@@ -252,6 +295,40 @@ nav .others {
     top: 33%;
 }
 
+#infotekst1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border: solid 1px black;
+    
+    text-align: center;
+     width: 19%;
+    height: 60%;
+
+}
+
+#infotekst2 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    border: solid 1px black;
+    text-align: center;
+    width: 19%;
+    height: 60%;
+
+}
+
+
+#infotekst3 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    border: solid 1px black;
+    text-align: center;
+     width: 19%;
+    height: 60%;
+
+}
 
 
 
@@ -413,3 +490,9 @@ nav .others {
     -o-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
 }
+
+#sectionregler {
+        width: 100%;
+        background-color: #C8E1E8;
+  
+    }
