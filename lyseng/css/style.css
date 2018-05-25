@@ -581,13 +581,13 @@ nav .others {
     text-align: center;
     font-family: 'Pacifico', cursive;
     color: #293290;
-    font-size: 35px;
+    font-size: 40px;
 }
 
-#reglertekst p {
+#reglertekst div {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-top: 2%;
     line-height: 2;
 }
@@ -598,6 +598,11 @@ nav .others {
 
 h3 {
     color: red;
+}
+
+.ring{
+    float: left;
+    margin-right: 10%;
 }
 
 

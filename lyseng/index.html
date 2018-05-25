@@ -137,7 +137,7 @@
 
             <div class="holdtekst">
                 <div id="senior" data-aos="fade-right" data-aos-delay="300"> <img src="image/senior_svoemning.png" width="40%"></div>
-                <div id="baby" data-aos="fade-right" data-aos-delay="350"> <img src="image/baby_svoemning.png" width="40%"></div>
+                <div id="   baby" data-aos="fade-right" data-aos-delay="350"> <img src="image/baby_svoemning.png" width="40%"></div>
                 <div id="aerobic" data-aos="fade-right" data-aos-delay="400"> <img src="image/aqua_svoemning.png" width="40%"></div>
                 <div id="pilates" data-aos="fade-right" data-aos-delay="450"> <img src="image/aqua_pilates.png" width="40%"></div>
                 <div id="bike" data-aos="fade-right" data-aos-delay="500"> <img src="image/aqua_bike.png" width="40%"> </div>
@@ -238,11 +238,22 @@
             <div id="reglertekst" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
 
                 <h1>Regler og retningslinjer</h1>
-                <p class="adgang">Adgang til svømmebadet sker på eget ansvar. Du er således ansvarlig for <br> din egen adfærd og dine ejendele - også når de er låst inde i skabet</p>
-                <p>Vis hensyn til de andre badegæster og følg altid personalets anvisninger</p>
-                <p>Det er tilladt at fotografere egen familie, når dette er aftalt med vores personale</p>
-                <p>Personer med smitsomme sygdomme eller væskende sår, har ingen adgang til <br> badefaciliteterne og bassiner</p>
-                <p>Vi skal gøre opmærksom på, at anlægget er røgfrit og at øl og spiritus ikke <br> må medbringes</p>
+                
+                <div class="adgang">
+                    <img src="image/ring.png" width="4%" class="ring">
+                <p >Adgang til svømmebadet sker på eget ansvar. Du er således ansvarlig for <br> din egen adfærd og dine ejendele - også når de er låst inde i skabet</p> </div>
+                
+                <div>
+                <p>Vis hensyn til de andre badegæster og følg altid personalets anvisninger</p></div>
+                
+                <div>
+                <p>Det er tilladt at fotografere egen familie, når dette er aftalt med vores personale</p></div>
+                
+                <div>
+                <p>Personer med smitsomme sygdomme eller væskende sår, har ingen adgang til <br> badefaciliteterne og bassiner</p></div>
+                
+                <div>
+                <p>Vi skal gøre opmærksom på, at anlægget er røgfrit og at øl og spiritus ikke <br> må medbringes</p></div>
 
             </div>
 
@@ -299,23 +310,6 @@
             )
         });
     </script>
-    
-        <script>
-        let minTekst = "<h3>Baby</h3> ";
-
-        $(document).ready(function() {
-            //console.log( "jQuery up and running" );
-
-            $('#baby').click(
-                function() {
-                    $('#teksthold').html(minTekst)
-                }
-            )
-        });
-    </script>
-
-
-
 
 </body>
 
