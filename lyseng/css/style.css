@@ -157,6 +157,7 @@ header {
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
         height: 300%;
+        height: 300%;
         top: -100%;
     }
 }
@@ -251,7 +252,6 @@ nav .others {
     -webkit-transform: scale(1.5);
     /* Safari 3-8 */
     transform: scale(1.07);
-
 }
 
 .holdtekst img:focus,
@@ -393,6 +393,12 @@ nav .others {
 .holdtekst img:active {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateX(2em);
+}
+
+#tekst {
+    position: absolute;
+    left: 50%;
+    top: 10%;
 }
 
 /* LOGO */
