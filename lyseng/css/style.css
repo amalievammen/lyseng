@@ -357,9 +357,6 @@ nav .others {
 
 }
 
-
-
-
 /* HOLD */
 
 .hold {
@@ -398,8 +395,42 @@ nav .others {
 #tekst {
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 13%;
 }
+
+#teksthold{
+    position: absolute;
+    width: 554px;
+    height: 550px;
+    left: 52%;
+    top: 16%;
+}
+
+#teksthold h2{
+    padding-top: 3%;
+    font-family: 'Pacifico', cursive;
+    color: #293290;
+    font-size: 47px;
+    text-align: center; 
+}
+
+
+#teksthold p{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 3;
+    font-size: 16px;
+}
+
+
+
+
+
+
 
 /* LOGO */
 
@@ -568,6 +599,7 @@ nav .others {
 h3 {
     color: red;
 }
+
 
 
 

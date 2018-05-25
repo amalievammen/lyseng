@@ -58,7 +58,7 @@
     </video>
             </div>
 
-
+            <!-- GRAFISK SVØMMINGPOOL -->
             <img id="overlayforside" src="image/overlay%20forside%203.png">
 
         </section>
@@ -143,14 +143,20 @@
                 <div id="bike" data-aos="fade-right" data-aos-delay="500"> <img src="image/aqua_bike.png" width="40%"> </div>
             </div>
 
-            <div id="tekst"> 
+            <div id="tekst">
                 <img src="image/holdboks1.png" width="85%">
-                
-          
             </div>
-            
-           
-            
+
+            <div id="teksthold">
+                <h2>Vælg et hold</h2>
+                <p>Lyseng Svømmebad har hold til hvert behov. Hvis du <br> gerne vil vide mere, så klik på et af holdene <br> til venstre for mere information.
+                </p>
+            </div>
+
+
+
+
+
             <!-- TEKST TIL HOLD -->
             <div class="holdtekst">
 
@@ -229,7 +235,6 @@
 
             <img src="image/tekstboks2.png" width="85%">
 
-
             <div id="reglertekst" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
 
                 <h1>Regler og retningslinjer</h1>
@@ -280,7 +285,7 @@
 
 
     <!-- IMAGE CLICK SET TEXT EFFECT https://jsfiddle.net/petj/51fnsb5r/ -->
-    
+
     <script>
         let minTekst = "<h3> Seniorsvømning giver mulighed for at holde gang i krop og sjæl, i samvær med andre ligestillede seniorer. Holdet kan være noget for dig over 60 år eller førtidspensionist. Heraf kan alle deltage, både hvis du er nybegynder, har småskavanker eller har et behov for vandtilvænning. Hver lektion kan indeholde elementer såsom vandgymnastik, aquajogging, motionssvømning samt høj mulighed for et socialt samvær.</h3> ";
 
@@ -289,12 +294,26 @@
 
             $('#senior').click(
                 function() {
-                    $('#tekst').html(minTekst)
+                    $('#teksthold').html(minTekst)
                 }
             )
         });
     </script>
     
+        <script>
+        let minTekst = "<h3>Baby</h3> ";
+
+        $(document).ready(function() {
+            //console.log( "jQuery up and running" );
+
+            $('#baby').click(
+                function() {
+                    $('#teksthold').html(minTekst)
+                }
+            )
+        });
+    </script>
+
 
 
 
