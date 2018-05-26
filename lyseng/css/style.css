@@ -426,12 +426,6 @@ nav .others {
     font-size: 16px;
 }
 
-
-
-
-
-
-
 /* LOGO */
 
 #logo {
@@ -471,14 +465,14 @@ nav .others {
 .flip-container {
     perspective: 1000;
     display: inline-block;
-    margin-left: 2%;
-
+    padding-left: 3%;
+    margin-left: 1%;
+    margin-top: 12%;
 }
 
-.flip-container img {
+.faciliteter {
     object-fit: cover;
 }
-
 
 /* FLIP NÅR MOUSEOVER */
 
@@ -490,7 +484,7 @@ nav .others {
 .flip-container,
 .front,
 .back {
-    width: 250px;
+    width: 240px;
     height: 400px;
 }
 
@@ -529,7 +523,7 @@ nav .others {
 .front p,
 .back p {
     color: #fff;
-    font-family: HelveticaNeue, Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-size: 30px;
 }
@@ -540,7 +534,7 @@ nav .others {
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     transform: ratateY(0deg);
-    background: rgb(81, 211, 133);
+    background: #ffffff;
     z-index: 2;
 }
 
@@ -548,7 +542,8 @@ nav .others {
 
 .back {
     transform: rotateY(180deg);
-    background: lightblue;
+    background: white;
+    opacity: 0.95;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -565,6 +560,12 @@ nav .others {
 
 #sectionregler img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.livreder{
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
 }
